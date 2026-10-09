@@ -1,0 +1,504 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
+  --transparant: rgba(0, 0, 0, 0.319);
+}
+body {
+  font-size: 1.2rem;
+  font-family: 'Work Sans', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/IMG_3974.jpg);
+  background-size: cover; /* Membuat gambar menutupi area hero */
+  background-repeat: no-repeat; /* Mencegah gambar berulang */
+  background-position: center; /* Memusatkan gambar */
+  z-index: -1;
+}
+.hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  background-color: var(--transparant);
+}
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+.hero h1 {
+  font-family: 'Sacramento', cursive;
+  font-weight: 6rem;
+  font-size: 6rem;
+  margin-top: 30px;
+}
+.hero h4 {
+  font-size: 1.6rem;
+}
+.hero p {
+  font-size: 1.4rem;
+}
+.hero a {
+  color: var(--pink);
+  background-color: aliceblue;
+  box-shadow: var(--shadow);
+}
+.hero a:hover {
+  background-color: var(--pink);
+  color: aliceblue;
+}
+
+/* .mynavbar */
+.mynavbar {
+  background-color: rgba(225, 225, 225, 0.4) !important;
+  backdrop-filter: blur(4px);
+}
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: 'Sacramento', cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+.sticky-top {
+  overflow: hidden;
+}
+.home {
+  background-image: url(img/floraPattern1.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.home h2,
+.info h2,
+.events h2,
+.venue h2,
+.gallery h2 {
+  color: var(--pink);
+  font-family: 'Sacramento';
+  font-size: 5rem;
+  font-weight: bold;
+}
+.home h2 {
+  margin-top: -6rem;
+}
+.home h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.home p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.home .couple {
+  margin-top: 75px;
+}
+.home .couple h3 {
+  font-family: 'Sacramento';
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--pink);
+}
+.home .couple img {
+  width: 100%;
+}
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+.home .heart i {
+  margin: auto;
+  color: var(--pink);
+}
+
+/* info */
+.info {
+  background-color: var(--bg);
+  color: azure;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.info .alamat {
+  font-size: 1.1rem;
+}
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.info .card {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+.info .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.info .card-body {
+  font-size: 1rem;
+}
+.info .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* events and gallery */
+.events,
+.venue,
+.gallery {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.events-intro > span,
+.gallery span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: clamp(12px, 0.9vw, 14px);
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+.gallery p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.events {
+  background-color: #fffaf8;
+  scroll-margin-top: 5rem;
+}
+.venue {
+  background: linear-gradient(180deg, #fff 0%, #fffaf8 100%);
+  scroll-margin-top: 5rem;
+}
+.events-intro {
+  max-width: 680px;
+  margin: 0 auto 3.5rem;
+}
+.events-intro h2 {
+  margin: 0 0 0.75rem;
+}
+.events-intro p {
+  color: #666;
+  font-size: clamp(15px, 1.2vw, 17px);
+  font-weight: 300;
+}
+.venue-card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border: 1px solid rgba(241, 78, 149, 0.24);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 14px 40px rgba(62, 37, 45, 0.08);
+}
+.venue-icon {
+  display: grid;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(241, 78, 149, 0.1);
+  color: var(--pink);
+  font-size: 1.8rem;
+}
+.venue-card h3 {
+  margin-bottom: 0.5rem;
+  color: #3b3034;
+  font-family: 'Sacramento', cursive;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: bold;
+}
+.venue-card p {
+  margin: 0;
+  color: #666;
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+}
+.venue-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+.venue-button {
+  border: 1px solid var(--pink);
+  background: var(--pink);
+  color: white;
+}
+.venue-button:hover,
+.venue-button:focus-visible {
+  border-color: #d63d80;
+  background: #d63d80;
+  color: white;
+}
+.venue-button-outline {
+  background: white;
+  color: var(--pink);
+}
+.venue-button-outline:hover,
+.venue-button-outline:focus-visible {
+  background: var(--pink);
+  color: white;
+}
+.countdown-message {
+  margin: 0;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-shadow: var(--shadow);
+}
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.event-card {
+  position: relative;
+  min-height: 100%;
+  padding: 2rem;
+  overflow: hidden;
+  border: 1px solid rgba(241, 78, 149, 0.2);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 10px 30px rgba(62, 37, 45, 0.06);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 600ms ease, transform 600ms ease, box-shadow 250ms ease;
+}
+.event-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.event-card:hover {
+  box-shadow: 0 16px 36px rgba(62, 37, 45, 0.12);
+}
+.event-card:nth-child(2),
+.event-card:nth-child(4) {
+  transition-delay: 120ms;
+}
+.event-card.is-main-event {
+  border-color: rgba(241, 78, 149, 0.55);
+  background: linear-gradient(145deg, #fff 0%, #fff4f8 100%);
+  box-shadow: 0 12px 32px rgba(241, 78, 149, 0.12);
+}
+.event-card.is-main-event .event-icon {
+  background: rgba(241, 78, 149, 0.18);
+}
+.event-card.is-main-event .event-number {
+  color: rgba(241, 78, 149, 0.5);
+}
+.event-icon {
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1.25rem;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(241, 78, 149, 0.1);
+  color: var(--pink);
+  font-size: 1.6rem;
+}
+.event-number {
+  position: absolute;
+  top: 1.75rem;
+  right: 2rem;
+  color: rgba(241, 78, 149, 0.25);
+  font-family: 'Sacramento', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.event-card h3 {
+  margin-bottom: 1.25rem;
+  color: #3b3034;
+  font-family: 'Sacramento', cursive;
+  font-size: clamp(24px, 3.6vw, 44.8px);
+  font-weight: bold;
+}
+.event-details {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0 0 1.25rem;
+  color: #555;
+  font-size: clamp(13px, 1vw, 15.2px);
+}
+.event-details > div {
+  display: grid;
+  grid-template-columns: 6.25rem minmax(0, 1fr);
+  gap: 0.5rem;
+}
+.event-details dt {
+  color: var(--pink);
+  font-weight: 500;
+}
+.event-details dt i {
+  margin-right: 0.3rem;
+}
+.event-details dd {
+  margin: 0;
+}
+.event-card > p {
+  margin: 0;
+  color: #666;
+  font-size: clamp(14px, 1.1vw, 15.7px);
+  font-weight: 300;
+  line-height: 1.7;
+}
+@media (prefers-reduced-motion: reduce) {
+  .event-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* gallery */
+.gallery {
+  background-color: #f5f5f538;
+}
+
+/* footer */
+footer {
+  padding: 3rem;
+  background-color: var(--pink);
+  color: white;
+}
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+/* audio */
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: muter 4s linear infinite; /* bikin muter */
+  transform-origin: center; /* bikin muter ditengah-tengah */
+  display: flex; /* bikin muter ditengah-tengah */
+  justify-content: center; /* bikin muter ditengah-tengah */
+  align-items: center; /* bikin muter ditengah-tengah */
+  line-height: 0; /* bikin muter ditengah-tengah */
+}
+@keyframes muter {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* media query */
+/* extra large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown-circle > .simply-section {
+    width: 86px;
+    height: 86px;
+  }
+  .home .heart {
+    display: none;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown-circle > .simply-section {
+    width: 74px;
+    height: 74px;
+  }
+  .simply-countdown-circle {
+    gap: 0.5rem;
+  }
+  .mynavbar .nav-link {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .simply-countdown-circle > .simply-section {
+    width: 66px;
+    height: 66px;
+  }
+  .event-card {
+    padding: 1.5rem;
+  }
+}
+
+/* small mobile phone */
+@media (max-width: 460px) {
+  html {
+    font-size: 55%;
+  }
+  .simply-countdown-circle > .simply-section {
+    width: 58px;
+    height: 58px;
+  }
+}

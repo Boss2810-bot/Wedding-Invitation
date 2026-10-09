@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Invitation 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- simply countdown -->
+    <link rel="stylesheet" href="countdown/circle.css" />
+  </head>
+  <body>
+    <!-- bagian hero -->
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h4>Dear <span>Guest,</span></h4>
+        <h1>Rishabh & Srishty</h1>
+        <p>Pheras begin in:</p>
+        <!-- nanti ada countdown disini -->
+        <div id="countdown" class="countdown simply-countdown-circle mt-4 mb-4"></div>
+        <a href="#home" class="btn mt-4" btn-lg onClick="enableScroll()">Open Invitation</a>
+      </main>
+    </section>
+
+    <!-- bagian navbar -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Rishabh & Srishty</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rishabh & Srishty</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#home" data-bs-dismiss="offcanvas">Home</a>
+                <a class="nav-link" href="#info" data-bs-dismiss="offcanvas">Info</a>
+                <a class="nav-link" href="#events" data-bs-dismiss="offcanvas">Events</a>
+                <a class="nav-link" href="#venue" data-bs-dismiss="offcanvas">Venue</a>
+                <a class="nav-link" href="#gallery" data-bs-dismiss="offcanvas">Gallery</a>
+              </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- bagian home -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Our Wedding</h2>
+            <h3>15 January 2027</h3>
+            <p>With great joy, we invite you to join us as we celebrate our wedding.</p>
+          </div>
+
+          <div class="row couple">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-8 text-end">
+                  <h3>Rishabh</h3>
+                  <p>A kind heart, a steady spirit, and a smile that makes every day brighter.</p>
+                  <p>Son of Mr. Mukesh <br> and <br> Mrs. Seema</p>
+                </div>
+                <div class="col-4">
+                  <img src="img/478332603_18358215094131876_9000621785370326459_n.jpg" alt="Groom" class="img-responsive rounded-circle">
+                </div>
+              </div>
+            </div>
+            <span class="heart"><i class="bi bi-heart-fill"></i></span>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-4">
+                  <img src="img/pengantinWanita.png" alt="Bride" class="img-responsive rounded-circle">
+                </div>
+                <div class="col-8">
+                  <h3>Srishty</h3>
+                  <p>A gentle soul, a joyful laugh, and a heart that makes every moment feel like home.</p>
+                  <p>Daughter of Mr. Ipsum <br> and <br> Mrs. Lorem</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Wedding Details</h2>
+            <p class="alamat">JMD Resort, Mandu<br>Mandu, Madhya Pradesh, India</p>
+            <p class="description">We look forward to celebrating with you at JMD Resort, Mandu.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">
+                Pheras
+              </div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>2:00 PM onwards</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>15 January 2027</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                JMD Resort, Mandu
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">
+                Reception
+              </div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>7:00 PM</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>15 January 2027</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                JMD Resort, Mandu
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="events">
+      <div class="container">
+        <div class="events-intro text-center">
+          <span>THE WEDDING CELEBRATIONS</span>
+          <h2>Wedding Events</h2>
+          <p>Join us as we celebrate love, laughter, family, and the beginning of forever.</p>
+        </div>
+
+        <div class="events-grid">
+          <article class="event-card">
+            <div class="event-icon" aria-hidden="true"><i class="bi bi-gem"></i></div>
+            <span class="event-number">01</span>
+            <h3>Engagement &amp; Ganesh Pooja</h3>
+            <dl class="event-details">
+              <div><dt><i class="bi bi-calendar-heart"></i> Date</dt><dd>14 January 2027</dd></div>
+              <div><dt><i class="bi bi-clock"></i> Time</dt><dd>10:00 AM</dd></div>
+              <div><dt><i class="bi bi-geo-alt"></i> Venue</dt><dd>JMD Resort, Mandu, Madhya Pradesh</dd></div>
+            </dl>
+            <p>With the blessings of Lord Ganesha, we begin our wedding celebrations with an auspicious ceremony and the joy of our engagement.</p>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon" aria-hidden="true"><i class="bi bi-stars"></i></div>
+            <span class="event-number">02</span>
+            <h3>Rishabh's Mayra</h3>
+            <dl class="event-details">
+              <div><dt><i class="bi bi-calendar-heart"></i> Date</dt><dd>14 January 2027</dd></div>
+              <div><dt><i class="bi bi-clock"></i> Time</dt><dd>12:30 PM</dd></div>
+              <div><dt><i class="bi bi-geo-alt"></i> Venue</dt><dd>JMD Resort, Mandu, Madhya Pradesh</dd></div>
+            </dl>
+            <p>A beautiful family tradition filled with blessings, love, gifts, and cherished family moments.</p>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon" aria-hidden="true"><i class="bi bi-flower1"></i></div>
+            <span class="event-number">03</span>
+            <h3>Haldi Ceremony</h3>
+            <dl class="event-details">
+              <div><dt><i class="bi bi-calendar-heart"></i> Date</dt><dd>14 January 2027</dd></div>
+              <div><dt><i class="bi bi-clock"></i> Time</dt><dd>2:00 PM</dd></div>
+              <div><dt><i class="bi bi-geo-alt"></i> Venue</dt><dd>JMD Resort, Mandu, Madhya Pradesh</dd></div>
+            </dl>
+            <p>Celebrate the vibrant colors of Haldi with laughter, family, music, and unforgettable moments.</p>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon" aria-hidden="true"><i class="bi bi-music-note-beamed"></i></div>
+            <span class="event-number">04</span>
+            <h3>Sangeet Night</h3>
+            <dl class="event-details">
+              <div><dt><i class="bi bi-calendar-heart"></i> Date</dt><dd>14 January 2027</dd></div>
+              <div><dt><i class="bi bi-clock"></i> Time</dt><dd>7:00 PM</dd></div>
+              <div><dt><i class="bi bi-geo-alt"></i> Venue</dt><dd>JMD Resort, Mandu, Madhya Pradesh</dd></div>
+            </dl>
+            <p>An evening of music, dance, joyful performances, and unforgettable celebrations with our loved ones.</p>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon" aria-hidden="true"><i class="bi bi-flower2"></i></div>
+            <span class="event-number">05</span>
+            <h3>Srishty's Mayra</h3>
+            <dl class="event-details">
+              <div><dt><i class="bi bi-calendar-heart"></i> Date</dt><dd>15 January 2027</dd></div>
+              <div><dt><i class="bi bi-clock"></i> Time</dt><dd>9:00 AM</dd></div>
+              <div><dt><i class="bi bi-geo-alt"></i> Venue</dt><dd>JMD Resort, Mandu, Madhya Pradesh</dd></div>
+            </dl>
+            <p>A heartfelt family celebration filled with blessings, love, and beautiful traditions.</p>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon" aria-hidden="true"><i class="bi bi-music-note-list"></i></div>
+            <span class="event-number">06</span>
+            <h3>Baarat</h3>
+            <dl class="event-details">
+              <div><dt><i class="bi bi-calendar-heart"></i> Date</dt><dd>15 January 2027</dd></div>
+              <div><dt><i class="bi bi-clock"></i> Time</dt><dd>11:00 AM</dd></div>
+              <div><dt><i class="bi bi-geo-alt"></i> Venue</dt><dd>JMD Resort, Mandu, Madhya Pradesh</dd></div>
+            </dl>
+            <p>Get ready for a joyful Baarat filled with music, dancing, excitement, and the groom's grand arrival.</p>
+          </article>
+
+          <article class="event-card is-main-event">
+            <div class="event-icon" aria-hidden="true"><i class="bi bi-fire"></i></div>
+            <span class="event-number">07</span>
+            <h3>Pheras</h3>
+            <dl class="event-details">
+              <div><dt><i class="bi bi-calendar-heart"></i> Date</dt><dd>15 January 2027</dd></div>
+              <div><dt><i class="bi bi-clock"></i> Time</dt><dd>2:00 PM onwards</dd></div>
+              <div><dt><i class="bi bi-geo-alt"></i> Venue</dt><dd>JMD Resort, Mandu, Madhya Pradesh</dd></div>
+            </dl>
+            <p>With the blessings of our families, Rishabh and Srishty take their sacred vows and begin their journey together.</p>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon" aria-hidden="true"><i class="bi bi-stars"></i></div>
+            <span class="event-number">08</span>
+            <h3>Reception</h3>
+            <dl class="event-details">
+              <div><dt><i class="bi bi-calendar-heart"></i> Date</dt><dd>15 January 2027</dd></div>
+              <div><dt><i class="bi bi-clock"></i> Time</dt><dd>7:00 PM</dd></div>
+              <div><dt><i class="bi bi-geo-alt"></i> Venue</dt><dd>JMD Resort, Mandu, Madhya Pradesh</dd></div>
+            </dl>
+            <p>Join us for an evening of happiness, dinner, celebration, and wonderful memories as we celebrate the newlyweds.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="venue" class="venue">
+      <div class="container">
+        <div class="events-intro text-center">
+          <span>THE WEDDING DESTINATION</span>
+          <h2>Celebrate With Us</h2>
+        </div>
+        <div class="venue-card text-center">
+          <div class="venue-icon" aria-hidden="true"><i class="bi bi-geo-alt-fill"></i></div>
+          <h3>JMD Resort, Mandu</h3>
+          <p>Mandu, Madhya Pradesh, India</p>
+          <div class="venue-actions">
+            <a class="btn venue-button" href="https://www.google.com/maps/search/?api=1&amp;query=JMD+Resort+Mandu+Madhya+Pradesh" target="_blank" rel="noopener noreferrer">Get Directions</a>
+            <a class="btn venue-button venue-button-outline" href="https://www.google.com/maps/search/?api=1&amp;query=JMD+Resort+Mandu+Madhya+Pradesh" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memories Along the Way</span>
+            <h2>Photo Gallery</h2>
+            <p>A few treasured moments from our journey together.</p>
+          </div>
+
+          <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+            <div class="col mt-3">
+              <a href="img/B4BB3E59-5723-4706-B732-5178EF0AFEF0.PNG" data-toggle="lightbox" data-caption="Rishabh & Srishty 1" data-galery="mygallery">
+                <img src="img/B4BB3E59-5723-4706-B732-5178EF0AFEF0.PNG" alt="Rishabh & Srishty 1" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+            <div class="col mt-3">
+              <a href="img/IMG_1360.jpg" data-toggle="lightbox" data-caption="Rishabh & Srishty 2" data-galery="mygallery">
+                <img src="img/IMG_1360.jpg" alt="Rishabh & Srishty 2" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            
+            <div class="col mt-3">
+              <a href="img/gallery/tumbnail/gallery1.jpeg" data-toggle="lightbox" data-caption="Rishabh & Srishty 3" data-galery="mygallery">
+                <img src="img/gallery/tumbnail/gallery1.jpeg" alt="Rishabh & Srishty 3" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            
+            <div class="col mt-3">
+              <a href="img/gallery/galleryMain1.jpeg" data-toggle="lightbox" data-caption="Rishabh & Srishty 4" data-galery="mygallery">
+                <img src="img/gallery/galleryMain1.jpeg" alt="Rishabh & Srishty 4" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            
+            <div class="col mt-3">
+              <a href="img/B4BB3E59-5723-4706-B732-5178EF0AFEF0.PNG" data-toggle="lightbox" data-caption="Rishabh & Srishty 5" data-galery="mygallery">
+                <img src="img/B4BB3E59-5723-4706-B732-5178EF0AFEF0.PNG" alt="Rishabh & Srishty 5" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            
+            <div class="col mt-3">
+              <a href="img/gallery/tumbnail/gallery4.jpeg" data-toggle="lightbox" data-caption="Rishabh & Srishty 6" data-galery="mygallery">
+                <img src="img/gallery/tumbnail/gallery4.jpeg" alt="Rishabh & Srishty 6" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            
+            <div class="col mt-3">
+              <a href="img/gallery/tumbnail/galleryMain2.jpeg" data-toggle="lightbox" data-caption="Rishabh & Srishty 7" data-galery="mygallery">
+                <img src="img/gallery/tumbnail/galleryMain2.jpeg" alt="Rishabh & Srishty 7" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!-- footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <small class="block">&copy;2025 Dino Wedding. All Rights Reserved.</small>
+              <small class="block">Design by: <a href="https://instagram.com/">@Dino</a></small>
+              
+              <ul class="mt-3">
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+              </ul>
+            
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- audio -->
+       <div id="audio-container">
+        <audio id="backSong" autoplay loop>
+          <source src="audio/Din Shagna Da - Instrumental.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="audio-icon-wrapper" style="display: none;">
+          <i class="bi bi-disc"></i>
+        </div>
+       </div>
+
+<!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+
+    <script>
+      const weddingDate = new Date("2027-01-15T14:00:00+05:30").getTime();
+      const countdown = document.querySelector('#countdown');
+      const countdownUnits = [
+        { key: 'days', label: 'Days', duration: 24 * 60 * 60 * 1000 },
+        { key: 'hours', label: 'Hours', duration: 60 * 60 * 1000 },
+        { key: 'minutes', label: 'Minutes', duration: 60 * 1000 },
+        { key: 'seconds', label: 'Seconds', duration: 1000 },
+      ];
+      let countdownInterval;
+
+      function showCountdownMessage(message) {
+        countdown.replaceChildren();
+        const messageElement = document.createElement('p');
+        messageElement.className = 'countdown-message';
+        messageElement.textContent = message;
+        countdown.append(messageElement);
+      }
+
+      if (Date.now() >= weddingDate) {
+        showCountdownMessage('Our wedding day has passed—thank you for celebrating with us! ❤️');
+      } else {
+        const countdownValues = {};
+        countdownUnits.forEach(({ key, label }) => {
+          const section = document.createElement('div');
+          section.className = `simply-section simply-${key}-section`;
+          const content = document.createElement('div');
+          const amount = document.createElement('span');
+          amount.className = 'simply-amount';
+          const unit = document.createElement('span');
+          unit.className = 'simply-word';
+          unit.textContent = label;
+          content.append(amount, unit);
+          section.append(content);
+          countdown.append(section);
+          countdownValues[key] = amount;
+        });
+
+        function updateCountdown() {
+          const remaining = weddingDate - Date.now();
+          if (remaining <= 0) {
+            window.clearInterval(countdownInterval);
+            showCountdownMessage('Today is the day! ❤️');
+            return;
+          }
+
+          let remainingMilliseconds = remaining;
+          countdownUnits.forEach(({ key, duration }) => {
+            const value = Math.floor(remainingMilliseconds / duration);
+            countdownValues[key].textContent = String(value);
+            remainingMilliseconds -= value * duration;
+          });
+        }
+
+        countdownInterval = window.setInterval(updateCountdown, 1000);
+        updateCountdown();
+      }
+    </script>
+    <!-- solve hasil dari penanganan overflow -->
+    <script>
+      const stickyTop = document.querySelector('.sticky-top');
+      const offcanvas = document.querySelector('.offcanvas');
+
+        offcanvas.addEventListener('show.bs.offcanvas', function() {
+        stickyTop.style.overflow = 'visible';
+        });
+
+        offcanvas.addEventListener('hidden.bs.offcanvas', function() {
+        stickyTop.style.overflow = 'hidden';
+        });
+    </script>
+
+    <!-- disable scroll -->
+    <script>
+      const rootElement = document.querySelector(':root');
+      const audioIconWrapper = document.querySelector('.audio-icon-wrapper')
+      const audioIcon = document.querySelector('.audio-icon-wrapper i')
+      const backSong = document.querySelector('#backSong');
+      let isPlaying = false;
+
+      function disableScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function() {
+          window.scrollTo(scrollTop, scrollLeft);
+        }
+
+        rootElement.style.scrollBehavior = 'auto';
+      }
+
+      function enableScroll() {
+        window.onscroll = function() { }
+        rootElement.style.scrollBehavior = 'smooth';
+        //localStorage.setItem('opened', 'true');
+        playAudio()
+      }
+
+      //menggabungkan fungsi play audio dengan lihat undangan
+      function playAudio() {
+        backSong.volume = 0.5;
+        backSong.play();
+        audioIconWrapper.style.display = 'flex'
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          backSong.pause ();
+          audioIcon.classList.remove('bi-disc');
+          audioIcon.classList.add('bi-pause-circle');
+        } else {
+          backSong.play ();
+          audioIcon.classList.add('bi-disc');
+          audioIcon.classList.remove('bi-pause-circle');
+        }
+
+        isPlaying = !isPlaying;
+      }
+      // if(!localStorage.getItem('opened')){
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+
+     <!-- js menamai undangan sesuai nama tamu -->
+     <script>
+      const urlParams = new URLSearchParams(window.location.search); //pengambilan parameter dari url yang bernilai nama tamu
+      const nama = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || '';
+
+      // pemanggilan element yang akan diisi nama dari url
+      const namaContainer = document.querySelector('.hero h4 span');
+      const translatedPronoun = {
+        'Bapak': 'Mr.',
+        'Ibu': 'Ms.',
+        'Saudara': 'Guest',
+        'Saudari': 'Guest',
+        'Bapak/Ibu/Saudara/i': 'Guest'
+      }[pronoun] || pronoun;
+      namaContainer.innerText = `${translatedPronoun || 'Guest'}${nama ? ` ${nama}` : ''},`;
+
+     </script>
+
+    <script>
+      const eventCards = document.querySelectorAll('.event-card');
+      const eventObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      eventCards.forEach((card) => eventObserver.observe(card));
+    </script>
+
+  </body>
+</html>
