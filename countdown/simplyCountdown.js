@@ -15,18 +15,6 @@ const w = (n, e, o, t, l, d) => {
     seconds: c
   };
 };
-/*!
- * Project : simplyCountdown.js
- * Date : 2024-12-29
- * License : MIT
- * Version : 3.0.1
- * Author : Vincent Loy-Serre
- * Contributors :
- *  - Justin Beasley
- *  - Nathan Smith
- *  - Mehdi Rezaei
- *  - mira01
- */
 const m = {
   year: 2024,
   month: 12,
@@ -187,4 +175,3 @@ const y = (n, e) => {
 export {
   x as default
 };
-//# sourceMappingURL=simplyCountdown.js.map

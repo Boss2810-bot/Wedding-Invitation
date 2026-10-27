@@ -15,13 +15,11 @@
     <link rel="stylesheet" href="countdown/circle.css" />
   </head>
   <body>
-    <!-- bagian hero -->
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
       <main>
         <h4>Dear <span>Guest,</span></h4>
         <h1>Rishabh & Srishty</h1>
         <p>Pheras begin in:</p>
-        <!-- nanti ada countdown disini -->
         <div id="countdown" class="countdown simply-countdown-circle mt-4 mb-4"></div>
         <a href="#home" class="btn mt-4" btn-lg onClick="enableScroll()">Open Invitation</a>
       </main>
@@ -30,7 +28,7 @@
     <!-- bagian navbar -->
     <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
       <div class="container">
-        <a class="navbar-brand" href="#home">Rishabh & Srishty</a>
+        <a class="navbar-brand" href="#home" onclick="unlockScroll()">Rishabh & Srishty</a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,12 +39,12 @@
           </div>
           <div class="offcanvas-body">
               <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="#home" data-bs-dismiss="offcanvas">Home</a>
-                <a class="nav-link" href="#info" data-bs-dismiss="offcanvas">Info</a>
-                <a class="nav-link" href="#events" data-bs-dismiss="offcanvas">Events</a>
-                <a class="nav-link" href="#venue" data-bs-dismiss="offcanvas">Venue</a>
-                <a class="nav-link" href="#gallery" data-bs-dismiss="offcanvas">Gallery</a>
+                <a class="nav-link" href="#home" onclick="unlockScroll()">Home</a>
+                <a class="nav-link" href="#info" onclick="unlockScroll()">Info</a>
+                <a class="nav-link" href="#events" onclick="unlockScroll()">Events</a>
+                <a class="nav-link" href="#venue" onclick="unlockScroll()">Venue</a>
               </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -78,7 +76,7 @@
             <div class="col-lg-6">
               <div class="row">
                 <div class="col-4">
-                  <img src="img/pengantinWanita.png" alt="Bride" class="img-responsive rounded-circle">
+                  <img src="img/Smiling South Asian Festive Garden Portrait.png" alt="Bride" class="img-responsive rounded-circle">
                 </div>
                 <div class="col-8">
                   <h3>Srishty</h3>
@@ -275,70 +273,13 @@
       </div>
     </section>
     
-    <section id="gallery" class="gallery">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <span>Memories Along the Way</span>
-            <h2>Photo Gallery</h2>
-            <p>A few treasured moments from our journey together.</p>
-          </div>
-
-          <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-            <div class="col mt-3">
-              <a href="img/B4BB3E59-5723-4706-B732-5178EF0AFEF0.PNG" data-toggle="lightbox" data-caption="Rishabh & Srishty 1" data-galery="mygallery">
-                <img src="img/B4BB3E59-5723-4706-B732-5178EF0AFEF0.PNG" alt="Rishabh & Srishty 1" class="img-fluid w-100 rounded">
-              </a>
-            </div>
-
-            <div class="col mt-3">
-              <a href="img/IMG_1360.jpg" data-toggle="lightbox" data-caption="Rishabh & Srishty 2" data-galery="mygallery">
-                <img src="img/IMG_1360.jpg" alt="Rishabh & Srishty 2" class="img-fluid w-100 rounded">
-              </a>
-            </div>
-            
-            <div class="col mt-3">
-              <a href="img/gallery/tumbnail/gallery1.jpeg" data-toggle="lightbox" data-caption="Rishabh & Srishty 3" data-galery="mygallery">
-                <img src="img/gallery/tumbnail/gallery1.jpeg" alt="Rishabh & Srishty 3" class="img-fluid w-100 rounded">
-              </a>
-            </div>
-            
-            <div class="col mt-3">
-              <a href="img/gallery/galleryMain1.jpeg" data-toggle="lightbox" data-caption="Rishabh & Srishty 4" data-galery="mygallery">
-                <img src="img/gallery/galleryMain1.jpeg" alt="Rishabh & Srishty 4" class="img-fluid w-100 rounded">
-              </a>
-            </div>
-            
-            <div class="col mt-3">
-              <a href="img/B4BB3E59-5723-4706-B732-5178EF0AFEF0.PNG" data-toggle="lightbox" data-caption="Rishabh & Srishty 5" data-galery="mygallery">
-                <img src="img/B4BB3E59-5723-4706-B732-5178EF0AFEF0.PNG" alt="Rishabh & Srishty 5" class="img-fluid w-100 rounded">
-              </a>
-            </div>
-            
-            <div class="col mt-3">
-              <a href="img/gallery/tumbnail/gallery4.jpeg" data-toggle="lightbox" data-caption="Rishabh & Srishty 6" data-galery="mygallery">
-                <img src="img/gallery/tumbnail/gallery4.jpeg" alt="Rishabh & Srishty 6" class="img-fluid w-100 rounded">
-              </a>
-            </div>
-            
-            <div class="col mt-3">
-              <a href="img/gallery/tumbnail/galleryMain2.jpeg" data-toggle="lightbox" data-caption="Rishabh & Srishty 7" data-galery="mygallery">
-                <img src="img/gallery/tumbnail/galleryMain2.jpeg" alt="Rishabh & Srishty 7" class="img-fluid w-100 rounded">
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-     </section>
-
      <!-- footer -->
       <footer>
         <div class="container">
           <div class="row">
             <div class="col text-center">
-              <small class="block">&copy;2025 Dino Wedding. All Rights Reserved.</small>
-              <small class="block">Design by: <a href="https://instagram.com/">@Dino</a></small>
+              <small class="block">&copy; Rishabh&Srishty 2027 Wedding. All Rights Reserved.</small>
+              <small class="block">Design by: <a href="https://www.instagram.com/_.dhruv_boss._/" target="_blank" rel="noopener noreferrer">@Dhruv Jain</a></small>
               
               <ul class="mt-3">
                 <li><a href="#"><i class="bi bi-instagram"></i></a></li>
@@ -366,7 +307,16 @@
 
 <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+    <script>
+      const navbarOffcanvas = document.querySelector('#offcanvasNavbar');
+      const offcanvasNavLinks = document.querySelectorAll('#offcanvasNavbar .nav-link');
+
+      offcanvasNavLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          bootstrap.Offcanvas.getInstance(navbarOffcanvas)?.hide();
+        });
+      });
+    </script>
 
     <script>
       const weddingDate = new Date("2027-01-15T14:00:00+05:30").getTime();
@@ -426,20 +376,6 @@
         updateCountdown();
       }
     </script>
-    <!-- solve hasil dari penanganan overflow -->
-    <script>
-      const stickyTop = document.querySelector('.sticky-top');
-      const offcanvas = document.querySelector('.offcanvas');
-
-        offcanvas.addEventListener('show.bs.offcanvas', function() {
-        stickyTop.style.overflow = 'visible';
-        });
-
-        offcanvas.addEventListener('hidden.bs.offcanvas', function() {
-        stickyTop.style.overflow = 'hidden';
-        });
-    </script>
-
     <!-- disable scroll -->
     <script>
       const rootElement = document.querySelector(':root');
@@ -460,10 +396,13 @@
       }
 
       function enableScroll() {
+        unlockScroll();
+        playAudio()
+      }
+
+      function unlockScroll() {
         window.onscroll = function() { }
         rootElement.style.scrollBehavior = 'smooth';
-        //localStorage.setItem('opened', 'true');
-        playAudio()
       }
 
       //menggabungkan fungsi play audio dengan lihat undangan
